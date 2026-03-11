@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vizit - Контакты</title>
+    
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Шапка (такая же как в index.html) -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+    <span style="font-size: 26px; font-weight: 700; color: #2B2B2B;">
+        Vizit 
+        <span style="font-weight: 400; color: #5DA9E9; font-size: 20px; font-family: 'Georgia', 'Times New Roman', serif; font-style: italic; letter-spacing: 0.5px;">| фабрика мягкой мебели</span>
+    </span>
+</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+        <a class="nav-link kaspi-link" href="https://kaspi.kz/shop/ваш-магазин" target="_blank">
+            <img src="assets/images/kaspi-logo.png" alt="Kaspi" style="height: 20px; margin-right: 5px;">
+            Kaspi Магазин
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="cart.html">
+            <i class="fa fa-shopping-cart"></i> Корзина
+        </a>
+    </li>
+</ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="top-search-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-lg-2">
+                        <div class="catalog-btn">
+                            <button class="btn btn-catalog" id="catalogToggle">
+                                <i class="fa fa-bars"></i> Каталог
+                            </button>
+                           <div class="catalog-dropdown" id="catalogDropdown">
+    <div class="dropdown-content">
+        <div class="dropdown-section">
+            <h4>Категории</h4>
+            <ul>
+                <li><a href="products.html?category=corner">Угловые диваны</a></li>
+                <li><a href="products.html?category=straight">Диваны прямые</a></li>
+                <li><a href="products.html?category=bed">Кровати</a></li>
+                <li><a href="products.html?category=armchair">Кресла</a></li>
+                <li><a href="products.html?category=pouf">Пуфики</a></li>
+                <li><a href="products.html?category=rocking">Кресла-качалки</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-8">
+                        <div class="search-box">
+                            <form action="products.html" method="get">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Найти товары" name="search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-search" type="submit">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Заголовок -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Свяжитесь с нами</h1>
+            <p>Мы всегда рады помочь вам!</p>
+        </div>
+    </div>
+
+    <!-- Контактная информация -->
+    <div class="container" style="padding: 60px 0;">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="info-card" style="text-align: center;">
+                    <div class="icon">📞</div>
+                    <h3>Телефоны</h3>
+                    <p><strong>Отдел продаж:</strong><br>+7 (777) 123-45-67</p>
+                    <!--<p><strong>Поддержка:</strong><br>+7 (777) 765-43-21</p>-->
+                </div>
+            </div>
+            <!--<div class="col-md-4">
+                <div class="info-card" style="text-align: center;">
+                    <div class="icon">✉️</div>
+                    <h3>Email</h3>
+                    <p><strong>Общие вопросы:</strong><br>info@vizit.kz</p>
+                    <p><strong>Закупки:</strong><br>purchase@vizit.kz</p>
+                </div>
+            </div>-->
+            <div class="col-md-4">
+                <div class="info-card" style="text-align: center;">
+                    <div class="icon">🏢</div>
+                    <h3>Адрес</h3>
+                    <p><strong>Главный офис:</strong><br>г. Алматы, ул. Абая 123</p>
+                    <p><strong>Режим работы:</strong><br>Пн-Пт: 9:00-20:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Карта и форма -->
+    <div class="container" style="padding: 0 0 60px 0;">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="info-card" style="margin-bottom: 30px;">
+                    <h3>Наши магазины</h3>
+                    <p><strong>Центральный магазин:</strong><br>г. Алматы, ул. Абая 123<br>Телефон: +7 (777) 111-11-11</p>
+                    <p><strong>ТРЦ "Москва":</strong><br>г. Алматы, ул. Гоголя 45<br>Телефон: +7 (777) 222-22-22</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Часы работы</h3>
+                    <table style="width: 100%;">
+                        <tr><td>Пн-Пт</td><td>9:00 - 20:00</td></tr>
+                        <tr><td>Суббота</td><td>10:00 - 18:00</td></tr>
+                        <tr><td>Воскресенье</td><td>10:00 - 16:00</td></tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="contact-form">
+                    <h3>Напишите нам</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label>Ваше имя</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Телефон</label>
+                            <input type="tel" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Сообщение</label>
+                            <textarea class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="filled-button" style="width: 100%;">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Подвал -->
+    <footer class="site-footer" style="background: #FFFFFF; border-top: 1px solid #E3EAF2; padding: 40px 0; margin-top: 60px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 style="color: #2B2B2B; margin-bottom: 20px;">Фабрика Vizit</h4>
+                    <p style="color: #666;">Качественная мягкая мебель с 1995 года. Диваны, кровати, кресла и пуфики для вашего дома.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 style="color: #2B2B2B; margin-bottom: 20px;">Информация</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;"><a href="about.html" style="color: #666; text-decoration: none;">О компании</a></li>
+                        <li style="margin-bottom: 10px;"><a href="contact.html" style="color: #666; text-decoration: none;">Контакты</a></li>
+                        <li style="margin-bottom: 10px;"><a href="products.html" style="color: #666; text-decoration: none;">Каталог</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 style="color: #2B2B2B; margin-bottom: 20px;">Юридическая информация</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;"><a href="oferta.html" style="color: #666; text-decoration: none;">Публичная оферта</a></li>
+                        <li style="margin-bottom: 10px;"><a href="privacy.html" style="color: #666; text-decoration: none;">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <p style="color: #999; font-size: 14px;">© 2026 Фабрика мягкой мебели Vizit. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  
+
+    <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Спасибо! Ваше сообщение отправлено. Мы свяжемся с вами в ближайшее время.');
+        this.reset();
+    });
+    </script>
+
+</body>
+</html>

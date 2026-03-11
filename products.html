@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Каталог мягкой мебели Vizit. 
+    Угловые и прямые диваны, кровати, кресла, пуфики. 
+    Высокое качество, доступные цены.">
+    <title>Vizit - Каталог товаров</title>
+    
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+    <span style="font-size: 26px; font-weight: 700; color: #2B2B2B;">
+        Vizit 
+        <span style="font-weight: 400; color: #5DA9E9; font-size: 20px; font-family: 'Georgia', 'Times New Roman', serif; font-style: italic; letter-spacing: 0.5px;">| фабрика мягкой мебели</span>
+    </span>
+</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+        <a class="nav-link kaspi-link" href="https://kaspi.kz/shop/ваш-магазин" target="_blank">
+            <img src="assets/images/kaspi-logo.png" alt="Kaspi" style="height: 20px; margin-right: 5px;">
+            Kaspi Магазин
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="cart.html">
+            <i class="fa fa-shopping-cart"></i> Корзина
+        </a>
+    </li>
+</ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="top-search-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-lg-2">
+                        <div class="catalog-btn">
+                            <button class="btn btn-catalog" id="catalogToggle">
+                                <i class="fa fa-bars"></i> Каталог
+                            </button>
+                            <div class="catalog-dropdown" id="catalogDropdown">
+                                <div class="dropdown-content">
+                                    <div class="dropdown-section">
+                                        <h4>Категории</h4>
+                                        <ul>
+                                            <li><a href="products.html?category=corner">Угловые диваны</a></li>
+                                            <li><a href="products.html?category=straight">Диваны прямые</a></li>
+                                            <li><a href="products.html?category=bed">Кровати</a></li>
+                                            <li><a href="products.html?category=armchair">Кресла</a></li>
+                                            <li><a href="products.html?category=pouf">Пуфики</a></li>
+                                            <li><a href="products.html?category=rocking">Кресла-качалки</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-8">
+                        <div class="search-box">
+                            <form action="products.html" method="get">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Найти товары" name="search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-search" type="submit">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Заголовок -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Каталог товаров</h1>
+            <p>Качественная мебель для вашего дома</p>
+        </div>
+    </div>
+
+    <!-- Категории -->
+    <div class="container">
+        <div class="category-filter">
+            <h4>Категории:</h4>
+            <button class="category-btn" onclick="filterCategory('all')">Все товары</button>
+            <button class="category-btn" onclick="filterCategory('corner')">Угловые диваны</button>
+            <button class="category-btn" onclick="filterCategory('straight')">Диваны прямые</button>
+            <button class="category-btn" onclick="filterCategory('bed')">Кровати</button>
+            <button class="category-btn" onclick="filterCategory('armchair')">Кресла</button>
+            <button class="category-btn" onclick="filterCategory('rocking')">Кресла-качалки</button>
+            <button class="category-btn" onclick="filterCategory('pouf')">Пуфики</button>
+        </div>
+    </div>
+
+    <!-- Товары -->
+    <div class="container">
+        <div class="row" id="products-container"></div>
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center" id="pagination"></ul>
+        </nav>
+    </div>
+
+       <!-- Подвал -->
+    <footer class="site-footer" style="background: #FFFFFF; border-top: 1px solid #E3EAF2; padding: 40px 0; margin-top: 60px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 style="color: #2B2B2B; margin-bottom: 20px;">Фабрика Vizit</h4>
+                    <p style="color: #666;">Качественная мягкая мебель с 1995 года. Диваны, кровати, кресла и пуфики для вашего дома.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 style="color: #2B2B2B; margin-bottom: 20px;">Информация</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;"><a href="about.html" style="color: #666; text-decoration: none;">О компании</a></li>
+                        
+                        <li style="margin-bottom: 10px;"><a href="products.html" style="color: #666; text-decoration: none;">Каталог</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 style="color: #2B2B2B; margin-bottom: 20px;">Юридическая информация</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;"><a href="oferta.html" style="color: #666; text-decoration: none;">Публичная оферта</a></li>
+                        <li style="margin-bottom: 10px;"><a href="privacy.html" style="color: #666; text-decoration: none;">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <p style="color: #999; font-size: 14px;">© 2026 Фабрика мягкой мебели Vizit. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  
+
+    <style>
+    .category-filter {
+        background-color: #FFFFFF;
+        border: 1px solid #E3EAF2;
+        border-radius: 16px;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    .category-btn {
+        background-color: #F4F8FC;
+        color: #2B2B2B;
+        border: 1px solid #E3EAF2;
+        margin: 5px;
+        padding: 8px 20px;
+        border-radius: 30px;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+    .category-btn:hover, .category-btn.active {
+        background-color: #5DA9E9;
+        color: white;
+        border-color: #5DA9E9;
+    }
+    </style>
+
+</body>
+</html>
